@@ -14,8 +14,8 @@ export default async function Page() {
     client: notion,
   });
 
-  renderer.use(hljsPlugin());
-  renderer.use(bookmarkPlugin());
+//   renderer.use(hljsPlugin());
+//   renderer.use(bookmarkPlugin());
 
   const html = await renderer.render(...blocks);
 

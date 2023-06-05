@@ -1,0 +1,11 @@
+.col5 {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+}
+
+.col5 > div {
+    width: 100%;
+    margin: 5px;
+    display: inline-block;
+}

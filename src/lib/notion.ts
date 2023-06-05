@@ -15,21 +15,7 @@ export const fetchPages = React.cache(() => {
   return notion.databases.query({
     database_id: process.env.NOTION_DATABASE_ID!
   })
-  .then((res) => res.results[0] as PageObjectResponse | undefined);
-});
-
-export const fetchPageBySlug = React.cache((slug: string) => {
-  return notion.databases
-    .query({
-      database_id: process.env.NOTION_DATABASE_ID!,
-      filter: {
-        property: "Slug",
-        rich_text: {
-          equals: slug,
-        },
-      },
-    })
-    .then((res) => res.results[0] as PageObjectResponse | undefined);
+  .then((res) => res.results[2] as PageObjectResponse | undefined);
 });
 
 export const fetchPageBlocks = React.cache((pageId: string) => {
