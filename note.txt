@@ -1,0 +1,6 @@
+  import { NotionRenderer } from "@notion-render/client";
+    const renderer = new NotionRenderer({
+        client: notion,
+    });
+    const html = await renderer.render(...blocks);
+    return <div dangerouslySetInnerHTML={{ __html: html }}></div>;

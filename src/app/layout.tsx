@@ -6,12 +6,12 @@ import FooterLayout from "@/components/globalLayout/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: 'Blog',
-    description: 'My blog about the thing I love.',
+    title: "Jiner",
+    description: "My blog about the thing I love.",
     icons: {
-        icon: "/next.svg",
-        shortcut: "next.svg",
-        apple: "next.svg",
+        icon: "/logo.png",
+        shortcut: "logo.png",
+        apple: "logo.png",
     },
 };
 
@@ -22,10 +22,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head />
             <body className={inter.className}>
-                <HeaderLayout></HeaderLayout>
+                <div className="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
+                <HeaderLayout/>
                 {children}
-                <FooterLayout></FooterLayout>
+                <FooterLayout/>
+</div>
             </body>
         </html>
     );
