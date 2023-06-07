@@ -5,9 +5,9 @@ export default function HeaderLayout() {
     return (
         <>
             <div className="flex justify-between border-black border-b-[1px]">
-                <header className="m-4 text-3xl font-extrabold">JinerGenkai Blog</header>
+                <header className="m-4 text-3xl font-extrabold">JinerGenkai</header>
                 <nav className="flex justify-end">
-                    <Link className="m-2 mt-6" href="/">
+                    <Link className="m-2 mt-6" href="/blog">
                         <svg viewBox="0 0 24 24" fill="currentColor" className="inline-block w-5 h-5" role="presentation"><path d="M18,22A2,2 0 0,0 20,20V4C20,2.89 19.1,2 18,2H12V9L9.5,7.5L7,9V2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18Z"></path></svg>
                         <div className="inline-block">Blog</div>
                     </Link>
@@ -25,7 +25,7 @@ export default function HeaderLayout() {
                     </Link>
                 </nav>
             </div>
-            <div className="mt-4"></div>
+            <div className="mt-8"></div>
         </>
     );
 }

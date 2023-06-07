@@ -11,11 +11,11 @@ export const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-export const fetchPages = React.cache(() => {
+export const fetchPage = React.cache((pageId: number) => {
   return notion.databases.query({
     database_id: process.env.NOTION_DATABASE_ID!
   })
-  .then((res) => res.results[2] as PageObjectResponse | undefined);
+  .then((res) => res.results[pageId] as PageObjectResponse | undefined);
 });
 
 export const fetchPageBlocks = React.cache((pageId: string) => {

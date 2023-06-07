@@ -12,11 +12,11 @@ export default function FooterLayout() {
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
-                        stroke-width="1"
+                        strokeWidth="1"
                         stroke="currentColor"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     >
                         <path
                             stroke="none"
@@ -33,11 +33,11 @@ export default function FooterLayout() {
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
-                        stroke-width="1"
+                        strokeWidth="1"
                         stroke="currentColor"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     >
                         <path
                             stroke="none"
@@ -58,11 +58,11 @@ export default function FooterLayout() {
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
-                        stroke-width="1"
+                        strokeWidth="1"
                         stroke="currentColor"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     >
                         <path
                             stroke="none"

@@ -1,7 +1,7 @@
 // "use client";
 import {
     fetchPageBlocks,
-    fetchPages,
+    fetchPage,
     notion,
 } from "@/lib/notion";
 import { NotionRenderer } from "@notion-render/client";
@@ -11,7 +11,7 @@ import Image from "next/image";
 import styles from "./style.module.css";
 
 export default async function Gallery() {
-    const post = await fetchPages();
+    const post = await fetchPage(2);
     if (!post) notFound();
 
     const blocks = await fetchPageBlocks(post.id);
