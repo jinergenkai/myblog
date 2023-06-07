@@ -1,8 +1,6 @@
 import { fetchPageBlocks, fetchPage, notion } from "@/lib/notion";
 import { NotionRenderer } from "@notion-render/client";
 import { notFound } from "next/navigation";
-import hljs from "@notion-render/hljs-plugin";
-import hljsPlugin from "@notion-render/hljs-plugin";
 
 export default async function Page() {
     const post = await fetchPage(1);
@@ -14,7 +12,6 @@ export default async function Page() {
         client: notion,
     });
 
-    renderer.use(hljsPlugin());
 
     const html = await renderer.render(...blocks);
 

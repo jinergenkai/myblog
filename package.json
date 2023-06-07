@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@notion-render/client": "^1.0.0-rc.5",
-    "@notion-render/hljs-plugin": "^0.0.2",
     "@notionhq/client": "^2.2.5",
     "highlight.js": "^11.8.0",
     "next": "^13.4.2",
